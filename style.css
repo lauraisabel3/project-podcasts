@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--font-primary);
+    
+}
+:root{
+   --light-green : #00F3BB; 
+   --blue : #0000EC;
+   --font-primary : 'IBM Plex Mono', monospace;
+   --font-secondary : 'IBM Plex Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.header-menu-container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.header-logo{
+    width: 28px;
+    height: 28px;
+    display: flex;
+    background-image: url(./assets/logo.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.header-icon-menu{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/menu.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-self: end;
+}
+
+
+nav{
+    width: 100%;
+    max-width: 780px;
+    padding: 0;
+    margin: 0;
+    background-color: var(--blue);
+    color: white;
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
+nav ul{
+    
+    list-style: none;
+}
+
+nav li{
+    padding: 16px 0 20px 16px;
+}
+
+nav li a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: white;
+}
+
+
+.show{
+    display: block;
+}
+
+.close{
+    display: none;
+}
+
+
+
+.header-dinamic-tittle{
+    width: 70%;
+    margin-top: 32px;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+    text-align: left;
+    font-family: var(--font-secondary)
+}
+
+.header-dinamic-tittle span{
+    display: block;
+    text-decoration: line-through;
+    line-height: 0;
+}
+
+header p{
+    width: 100%;
+    margin-top: 16px;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+}
+
+header button{
+    width: 100%;
+    height: 40px;
+    margin-top: 24px;
+    background-color: var(--light-green);
+    border: none;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    color: black;
+}
+
+.main-section-podcasts {
+    width: 100%;
+    max-width: 780px;
+    height: auto;
+    margin: 32px auto;
+    padding: 20px;
+    background-color: var(--blue);
+    clip-path: polygon(0 4%, 100% 0, 100% 95%, 0 100%);
+}
+
+.main-section-podcasts h2{
+    padding-top: 60px;
+    font-family: var(--font-secondary);
+    font-size: 3rem;
+    line-height: 4.5rem;
+    font-weight: 400;
+    color: white;
+}
+
+.main-podcasts-container{
+    width: 100%;
+    display: grid;
+    margin: 32px auto 120px auto;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+    justify-items: center;
+}
+
+.main-section-img1{
+    display: grid;
+}
+
+.main-section-img2{
+    display: none;
+}
+
+.main-about-container{
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.main-about-img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin: -150px auto;
+}
+
+.main-about-img img{
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+} 
+
+.main-about-text {
+    width: 100%;
+    height: auto;
+    margin-top: 340px;
+}
+
+.main-about-text h3{
+    width: 50%;
+    text-align: left;
+    font-family: var(--font-secondary);
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+}
+
+.main-about-text p{
+    margin-top: 12px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+.main-invitados-container{
+    width: 100%;
+    max-width: 780px;
+    margin: 32px auto;
+}
+
+.main-invitados-container h3{
+    width: 50%;
+    padding-left: 20px;
+    font-family: var(--font-secondary);
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+}
+
+.main-invitados-imgs{
+    width: 100%;
+    margin: 32px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: aqua;
+}
+
+.main-invitados-imgs img{
+    width: 100%;
+}
+
+.main-topics-section{
+    width: 100%;
+    max-width: 780px;
+    height: auto;
+}
+
+.main-topics-section h3{
+    padding-left: 20px;
+    font-family: var(--font-secondary);
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4.4rem;
+}
+
+.main-topics-section span{
+    display: block;
+}
+
+.main-topics-container{
+    width: 100%;
+    margin: 32px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 60px;
+    justify-items: center;
+}
+
+.main-topics-card{
+    width: 60%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-topics-card img{
+    width: 50%;
+}
+.main-topics-card h5{
+    margin-top: 16px;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.main-news-section{
+    width: 100%;
+    max-width: 780px;
+    padding: 20px;
+    background-color: var(--blue);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+
+.main-news-section h3{
+    width: 50%;
+    margin: 10%  auto 0 auto;
+    text-align: center;
+    font-family: var(--font-secondary);
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+    color: white;
+}
+
+.main-news-section button{
+    width: 100%;
+    height: 40px;
+    margin: 24px auto 10% auto;
+    background-color: var(--light-green);
+    border: none;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    color: black;
+}
+
+footer{
+    width: 100%;
+    max-width: 780px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+footer h5{
+    text-align: center;
+    font-size: 1.6rem;
+    color: grey;
+}
+
+.footer-icons-container{
+    width: 100%;
+    display: grid;
+    margin: 20px auto 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+
+.footer-icons-container i{
+    font-size: 2rem;
+}
